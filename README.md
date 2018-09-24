@@ -1,19 +1,19 @@
 # TimerTabPanel
 Auto change tab panel with timer. This is jQuery, jQuery-UI Plugin.
 
-# Installation
+## Installation
 Download jquery.ttpanel.js and set your page.
 
-## Requirement
+### Requirement
 jQuery 1.7.2 or later  
 jQuery-ui 1.9.0 or later  
 jQuery-ui.css Optional for CSS. Use same version of jquery-ui.
 
-## Compatibility
+### Compatibility
 jQuery 2.x  
 jQuery 3.x  
 
-# Usage
+## Usage
 Load jquery.js, jquery-ui.js and jquery.ttpanel.js, set like below.
 ```javascript
 <script>
@@ -36,7 +36,7 @@ $(function () {
 </div>
 ```
 
-## Options
+### Options
 ```javascript
 <script>
 $(function () {
@@ -48,8 +48,8 @@ $(function () {
 </script>
 ```
 
-# Example
+## Example
 Open the index.html file located in the 'example' folder.
 
-# License
+## License
 This plugin is released under the MIT License.
