@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Plugin TimerTabPanel Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+<script src="js/jquery.ttpanel.min.js"></script>
+<script>
+$(function () {
+  $("#demo1").timerTabPanel();
+  $("#demo2").timerTabPanel({startTab: 3, timeInterval: 1000});
+});
+</script>
+<style>
+.tabPanel ul li:hover {
+  background: #FFF;
+}
+.tabPanel div {
+  height: 250px;
+  padding: 10px;
+}
+pre {
+  padding: 20px;
+  background: #000;
+  color: #FFF;
+}
+</style>
+</head>
+<body>
+<h1>TimerTabPanel Demo</h1>
+<pre>
+&lt;script&gt;
+$(function () {
+  $(".tabPanel").timerTabPanel();
+});
+&lt;/script&gt;
+</pre>
+<div id="demo1" class="tabPanel">
+<ul>
+<li><a href="#tab1Demo1">Title 1</a></li>
+<li><a href="#tab2Demo1">Title 2</a></li>
+<li><a href="#tab3Demo1">Title 3</a></li>
+<li><a href="#tab4Demo1">Title 4</a></li>
+<li><a href="#tab5Demo1">Title 5</a></li>
+</ul>
+<div id="tab1Demo1">
+<p>tab1 contents.</p>
+</div>
+<div id="tab2Demo1">
+<p>tab2 contents.</p>
+</div>
+<div id="tab3Demo1">
+<p>tab3 contents.</p>
+</div>
+<div id="tab4Demo1">
+<p>tab4 contents.</p>
+</div>
+<div id="tab5Demo1">
+<p>tab5 contents.</p>
+</div>
+</div>
+
+<h1>TimerTabPanel Options</h1>
+<pre>
+&lt;script&gt;
+$(function () {
+  $(".tabPanel.option").timerTabPanel({
+    startTab: 3,
+    timeInterval: 1000
+  });
+});
+&lt;/script&gt;
+</pre>
+<div id="demo2" class="tabPanel">
+<ul>
+<li><a href="#tab1Demo2">Title 1</a></li>
+<li><a href="#tab2Demo2">Title 2</a></li>
+<li><a href="#tab3Demo2">Title 3</a></li>
+<li><a href="#tab4Demo2">Title 4</a></li>
+<li><a href="#tab5Demo2">Title 5</a></li>
+</ul>
+<div id="tab1Demo2">
+<p>tab1 contents.</p>
+</div>
+<div id="tab2Demo2">
+<p>tab2 contents.</p>
+</div>
+<div id="tab3Demo2">
+<p>tab3 contents.</p>
+</div>
+<div id="tab4Demo2">
+<p>tab4 contents.</p>
+</div>
+<div id="tab5Demo2">
+<p>tab5 contents.</p>
+</div>
+</div>
+
+</body>
+</html>
